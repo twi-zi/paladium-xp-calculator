@@ -1,0 +1,54 @@
+  <!DOCTYPE html>
+<html>
+<head>
+  <title>Calculateur d'xp | Paladium</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <script type="text/javascript" src="javascript.js"></script>
+  <h1>Calculateur d'expérience métier pour paladium</h1>
+
+<div id="Card">
+  <div id="result">
+  </div>
+  <div id="align">
+    <img id="pic" src="pala.png" alt="Lingot de paladium" />   
+  <form id="form">
+    <label for="metier">Metier :</label>
+    <select id="metier" name="metier">
+      <option value="Mineur">Mineur</option>
+      <option value="Farmeur">Farmeur</option>
+      <option value="Chasseur">Chasseur</option>
+      <option value="Alchimiste">Alchimiste</option>
+    </select><br>
+  
+    <label for="niveauActuel">Niveau actuel :</label>
+    <input type="number" required="true"  min="1" max="100" id="niveauActuel" name="niveauActuel"><br>
+  
+    <label for="niveauAtteindre">Niveau à atteindre :</label>
+    <input type="number" min="1" max="100" required="true" id="niveauAtteindre" name="niveauAtteindre"><br>
+  
+    <label for="grade">Grade :</label>
+    <select id="grade" name="grade">
+      <option value=0>Aucun (0%)</option>
+      <option value=5>Titane (5%)</option>
+      <option value=10>Paladin (10%)</option>
+      <option value=15>Endium (15%)</option>
+    </select><br>
+  
+    <label for="boostQuotidien">Boost métier:</label>
+    <input type="number" required="true" id="boostQuotidien" name="boostQuotidien"><br>
+
+    <br>
+    <input type="submit" value="Calculer"> 
+    <input type="reset" value="Réinitialiser">
+
+  </form>
+  </div>
+</div> 
+<h1>Développé par Twi_zi</h1>
+<h3>Discord: Twi_zi</h3>
+</body>
+</html>
+</body>
+</html> 

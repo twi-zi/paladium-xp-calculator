@@ -1,0 +1,173 @@
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  margin-top: 4rem;
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse 0.92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse 0.92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+div#Card {
+  height: 650px;
+  width: 1000px;
+  position: relative;
+  border: solid;
+  border-color: black;
+  background-color: white;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+img#pic {
+  position: absolute;
+  /* margin-top: 10%; */
+  left: 10%;
+  
+}
+img#picresult {
+  position: absolute;
+  /* margin-top: 10%; */
+  left: 10%;
+  
+}
+
+div#align {
+  display: block;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 45%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+div#result {
+  display: none;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-left: 50%;
+  margin-right: 5%;
+  text-align: left;
+}
+
+input[type=text], input[type=number], label[id=grade] {
+  height: 10%;
+  width: 40%;
+  margin-top: 1rem;
+  padding:5px; 
+  border:2px solid #ccc; 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+label {
+  font-size: xx-large;
+}
+
+input[type=text]:focus {
+  border-color:#333;
+}
+
+input[type=submit] {
+  background-color: #f9670a;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 25px 2px;
+  cursor: pointer;
+}
+
+input[type=reset] {
+  background-color: #585858;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 25px 2px;
+  cursor: pointer;
+}
+
+button#return {
+  background-color: #585858;
+  border: none;
+  color: white;
+  border-radius: 50px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 25px 2px;
+  cursor: pointer;
+}
+
+select#metier , select#grade {
+  height: 10%;
+  width: 40%;
+  margin-top: 1rem;
+  padding:5px; 
+  border:2px solid #ccc; 
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
